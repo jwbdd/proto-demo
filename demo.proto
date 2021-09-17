@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package demo;
+
+message MapEntryLike {
+    bytes key = 1;
+    bytes value = 2;
+}
+
+message MapLike {
+    MapEntryLike entry = 1;
+}
+
+message ActualMap {
+    map<string, string> stuff = 1;
+}
